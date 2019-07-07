@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>stop watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">STOP WATCH</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="watch-display">
+                <span class="watch-time" id="display-time"><span id="hours">00</span> : <span id="minutes">00</span> :
+                    <span id="seconds">00</span> </span>
+                <span id="count-down">00</span>
+            </div>
+            <div class="watch-controls">
+                <button class="btn btn-start" id="start-stop-timer">Start</button>
+                <button class="btn btn-reset" id="reset-timer">Reset</button>
+                <button class="btn btn-record" id="record-timer">Record</button>
+            </div>
+            <div class="record-time-wrapper">
+                <p class="past-times">Past Times</p>
+                <ol class="record-time-wrapper" id="recorded-item"></ol>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="github-link"><a href="https://github.com/irenapopova/stop-watch-master" target="_blank">View source on
+                GitHub</a></p>
+        <p>Developed by <span class="author">Irena Popova</span></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

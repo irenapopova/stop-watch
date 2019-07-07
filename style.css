@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Changa|Yrsa');
+
+:root {
+    --sunset-orange: #ee6352;
+    --cyan-process: #08b2e3;
+    --anti-flash-white: #9eecef;
+    --shiny-shamrock: #57a773;
+    --independence: #484d6d;
+}
+
+body {
+    margin: 0;
+    font-family: 'Yrsa', serif;
+    background-color: var(--anti-flash-white);
+}
+
+.header {
+    text-align: center;
+}
+
+.title {
+    color: var(--independence);
+    margin: 0;
+    padding: 40px 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 480px;
+}
+
+.watch-display {
+    font-family: 'Changa', sans-serif;
+    padding: 10px 35px;
+    width: 45%;
+    margin: 0 auto;
+    background-color: #eeefff;
+    border-radius: 40px;
+    box-shadow: 0 0 6px 2px var(--independence), 0 0;
+}
+
+.watch-time {
+    font-size: 35px;
+    color: var(--cyan-process);
+}
+
+#count-down {
+    color: var(--sunset-orange);
+}
+
+.watch-controls {
+    margin: 0 auto;
+    padding: 40px 30px;
+    text-align: center;
+    height: 50px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 5px;
+    margin-left: 10px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: inherit;
+    width: 120px;
+    border-radius: 10px;
+    transition: 2ms;
+}
+
+.btn:hover {
+    font-weight: 600;
+    background-color: #eff;
+}
+
+.btn-start {
+    color: var(--cyan-process);
+    border: 1px solid var(--cyan-process);
+}
+
+.btn-stop {
+    color: #da2000;
+    border: 1px solid #da2000;
+}
+
+.btn-reset {
+    color: #ff6500;
+    border: 1px solid #ff6500;
+}
+
+.btn-record {
+    color: var(--shiny-shamrock);
+    border: 1px solid var(--shiny-shamrock);
+}
+
+.past-times {
+    color: var(--independence);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: 0;
+}
+
+.time-unit {
+    color: var(--cyan-process);
+    font-size: 18px;
+}
+
+.record-time-wrapper {
+    min-height: 200px;
+}
+
+.record-time-wrapper ol {
+    width: 160px;
+    text-align: right;
+}
+
+.record-time-wrapper ol li {
+    list-style-type: none;
+    color: var(--independence);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 7px;
+}
+
+.counter {
+    font-size: 16px;
+    color: var(--independence);
+}
+
+.footer {
+    color: var(--independence);
+    text-align: center;
+    font-size: 18px;
+}
+
+.author {
+    font-weight: bold;
+    color: rgb(181, 21, 45);
+}
+
+.github-link a {
+    text-decoration: none;
+    color: #087de3;
+    font-weight: bold;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        width: 100vw;
+    }
+
+    .watch-display {
+        width: 60%;
+    }
+
+    .btn {
+        width: 85px;
+        padding: 10px 6px;
+    }
+
+    .record-time-wrapper {
+        min-height: 135px;
+    }
+}
